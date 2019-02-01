@@ -4,7 +4,7 @@ import './App.css';
 import SmurfForm from './components/SmurfForm';
 import Smurfs from './components/Smurfs';
 import axios from "axios"; 
-import {Route, Link} from 'react-router-dom';
+import {Route, Link, NavLink} from 'react-router-dom';
 
 class App extends Component {
   constructor(props) {
@@ -37,14 +37,17 @@ getSmurfs(){
   render() {
     return (
       <div className="App">
-    <ul className= "navbar">
-    <li>
-      <Link to= "/">Home</Link>
-    </li>
-    <li>
-      <Link to ="/smurf-form">Add Smurf</Link>
-    </li>
-    </ul>
+      <nav>
+        <h1 className= "header">Welcome to Smurf Village</h1>
+        <div className= "nav-links">
+        <NavLink exact to = "/">
+        Home
+        </NavLink>
+        <NavLink to = "/smurf-form">  Add Smurf
+        </NavLink>
+        </div>
+      </nav>
+      
       <Route 
       exact path = {"/" }
        render ={props =>(
