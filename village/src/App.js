@@ -21,6 +21,10 @@ class App extends Component {
 getSmurfs(){
   axios
     .get('http://localhost:3333/smurfs')
+    .then(res=>{
+      console.log(res.data);
+    })
+    .catch(()=>{})
 }
 
   render() {
