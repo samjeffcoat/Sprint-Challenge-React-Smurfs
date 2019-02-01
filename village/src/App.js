@@ -26,7 +26,7 @@ getSmurfs(){
       this.setState({smurfs: res.data})
 
     })
-    .catch(()=>{})
+    .catch(err=>console.log(err));
 }
 
   render() {
