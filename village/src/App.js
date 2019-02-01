@@ -23,6 +23,8 @@ getSmurfs(){
     .get('http://localhost:3333/smurfs')
     .then(res=>{
       console.log(res.data);
+      this.setState({smurfs: res.data})
+
     })
     .catch(()=>{})
 }
