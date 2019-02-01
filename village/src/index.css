@@ -3,3 +3,33 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+nav{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 14px;
+  border-bottom: 1px solid white;
+  margin-bottom: 32px;
+}
+
+.nav-links{
+  display: flex;
+  justify-content: space-between;
+}
+.nav-links a{
+  text-decoration: none;
+  color: navy;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.Smurf{
+border: 3px solid blue;
+display:flex;
+justify-content: space-between;
+align-items: center;
+background: powderblue;
+color:white;
+padding: 10px;
+}
